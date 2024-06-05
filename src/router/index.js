@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import AboutView from '../views/AboutView.vue'
+import RepoView from '../views/RepoView.vue'
 import ErrorPage from '../views/ErrorPage.vue'
 import RepoDetails from '../components/RepoDetails.vue'
 import CreateRepo from '../views/CreateRepo.vue'
@@ -14,9 +14,9 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/about',
-      name: 'about',
-      component: AboutView
+      path: '/repo',
+      name: 'repo',
+      component: RepoView
     },
     {
       path:'/:catchAll(.*)',

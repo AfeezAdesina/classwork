@@ -12,7 +12,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/repo">Repos</RouterLink>
         <RouterLink to="/create">Create Repo</RouterLink>
         <RouterLink to="/Error">404 Page</RouterLink>
       </nav>
@@ -28,20 +28,18 @@ header {
   max-height: 100vh;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
+
 
 nav {
   width: 100%;
-  font-size: 12px;
+  font-size: 16px;
   text-align: center;
   margin-top: 2rem;
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color: var(--color-background);
+  border: 1px solid var(--color-background);
 }
 
 nav a.router-link-exact-active:hover {
@@ -65,10 +63,7 @@ nav a:first-of-type {
     padding-right: calc(var(--section-gap) / 2);
   } */
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
+ 
   /* header .wrapper {
     display: flex;
     place-items: flex-start;
@@ -76,7 +71,7 @@ nav a:first-of-type {
   } */
 
   nav {
-    text-align: left;
+    text-align: center;
     margin-left: -1rem;
     font-size: 1rem;
 
